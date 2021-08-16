@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "SampleExtension"
+
+include ':ExtensionsTestLib'
+project(':ExtensionsTestLib').projectDir = new File(settingsDir, "../ExtensionsTestLib")
