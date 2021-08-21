@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExtensionsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ExtensionsTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1505475871/ExtensionsTest.ExtensionsTestLib.iml" filepath="$PROJECT_DIR$/.idea/modules/-1505475871/ExtensionsTest.ExtensionsTestLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExtensionsTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExtensionsTest.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sampleextension/ExtensionsTest.sampleextension.iml" filepath="$PROJECT_DIR$/.idea/modules/sampleextension/ExtensionsTest.sampleextension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-extensions-test.ExtensionsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android-extensions-test.ExtensionsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1505475871/android-extensions-test.ExtensionsTest.ExtensionsTestLib.iml" filepath="$PROJECT_DIR$/.idea/modules/-1505475871/android-extensions-test.ExtensionsTest.ExtensionsTestLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android-extensions-test.ExtensionsTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android-extensions-test.ExtensionsTest.app.iml" />
     </modules>
   </component>
 </project>
