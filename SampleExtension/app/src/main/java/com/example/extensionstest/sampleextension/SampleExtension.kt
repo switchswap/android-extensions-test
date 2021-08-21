@@ -1,9 +1,18 @@
 package com.example.extensionstest.sampleextension
 
-import com.example.extensionstest.extensionstestlib.IExtension
+import com.example.extensionstest.extensionstestlib.*
 
-class SampleExtension: IExtension {
-    override fun test1(): String = "Hello world!"
-    override fun test2(): Int = 17
-    override fun test3(): Boolean = true
+
+class SampleExtension: Extension {
+    override val metadata = ExtensionMetadata(
+        name="Sample Extension"
+    )
+
+    override val sources = listOf(SampleSource())
 }
+
+
+
+
+
+
