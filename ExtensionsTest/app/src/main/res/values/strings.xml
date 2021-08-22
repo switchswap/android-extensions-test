@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ExtensionsTest</string>
+    <string name="title_activity_main">Extension Test</string>
+    <string name="button_find_anime">Find Anime</string>
+    <string name="label_found_anime">Found anime entries on source:</string>
+    <string name="label_found_episodes">Found episodes:</string>
 </resources>
