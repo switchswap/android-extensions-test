@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExtensionsTest">
         <activity
+            android:name=".PlayerActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"

@@ -1,8 +1,8 @@
 package com.example.extensionstest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -115,10 +115,21 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
 
     fun getMediaTrack(sourceAnime: SourceAnime, sourceEpisode: SourceEpisode) {
         Log.d("ASDF", "getMediaTrack called")
+
+        val intent = Intent(this, PlayerActivity::class.java)
+
         this.launch {
             withContext(Dispatchers.IO) {
                 val stream = source.getMediaStreamForEpisode(sourceAnime, sourceEpisode)
 
+                when(stream) {
+                    is MediaTrack.HLS -> {
+                        intent.putExtra("STREAM_HLS", stream.mediaUrl)
+                        intent.putExtra("STREAM_HEADERS", stream.headers)
+                    }
+                }
+
+                startActivity(intent)
             }
         }
     }
