@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private val extensions: ArrayList<ExtensionItem> = ArrayList()
+    private val extensions: ArrayList<ExtensionItem.Loaded> = ArrayList()
     private val recyclerView: RecyclerView by lazy {
         recyclerViewExtensions
     }

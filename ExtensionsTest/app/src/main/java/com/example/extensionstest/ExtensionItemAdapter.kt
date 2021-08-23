@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ExtensionItemAdapter(private val extensions: ArrayList<ExtensionItem>): RecyclerView.Adapter<ExtensionItemAdapter.ViewHolder>() {
+class ExtensionItemAdapter(private val extensions: ArrayList<ExtensionItem.Loaded>): RecyclerView.Adapter<ExtensionItemAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.labelName)
     }
