@@ -26,7 +26,7 @@ object ExtensionLoader {
         }
     }
 
-    fun loadExtension(context: Context, packageInfo: PackageInfo) {
+    private fun loadExtension(context: Context, packageInfo: PackageInfo): ExtensionItem {
         // Get relevant info from package
         val packageManager = context.packageManager
         val appInfo = packageInfo.applicationInfo
@@ -39,8 +39,10 @@ object ExtensionLoader {
         val loadedClass = Class.forName("${packageInfo.packageName}.SampleExtension", false, classLoader).newInstance()
         if (loadedClass is IExtension) {
             // We can now use the reflected class from the extension!
-            Log.d("ASDF", loadedClass.test1())
+//            Log.d("ASDF", loadedClass.test1())
+            return ExtensionItem.Loaded(extensionName, loadedClass)
         }
+        return ExtensionItem.Invalid(extensionName)
     }
 
     private fun isPackageAnExtension(pkgInfo: PackageInfo): Boolean {
