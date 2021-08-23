@@ -7,12 +7,15 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
     private val extensions: ArrayList<ExtensionItem.Loaded> = ArrayList()
     private val recyclerView: RecyclerView by lazy {
         recyclerViewExtensions
     }
+
+    val extensionManager: ExtensionManager by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         buttonFind.setOnClickListener {
             Toast.makeText(this, "Clicked!", Toast.LENGTH_SHORT).show()
             extensions.clear()
-            extensions.addAll(ExtensionLoader.findExtensions(this))
+            extensions.addAll(extensionManager.loadedExtensions)
             recyclerView.adapter?.notifyDataSetChanged()
         }
     }
