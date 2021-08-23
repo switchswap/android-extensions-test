@@ -18,11 +18,8 @@ object ExtensionLoader {
         val installedPackages = packageManager.getInstalledPackages(PackageManager.GET_CONFIGURATIONS)
         val extPackages = installedPackages.filter { isPackageAnExtension(it) }
 
-        if (extPackages.size == 1) {
-            loadExtension(context, extPackages[0])
-        }
         return extPackages.map {
-            ExtensionItem(it.packageName)
+            loadExtension(context, it)
         }
     }
 
