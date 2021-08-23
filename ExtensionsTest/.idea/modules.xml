@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExtensionsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ExtensionsTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1505475871/ExtensionsTest.ExtensionsTestLib.iml" filepath="$PROJECT_DIR$/.idea/modules/-1505475871/ExtensionsTest.ExtensionsTestLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/113146232/ExtensionsTest.ExtensionsTestLib.iml" filepath="$PROJECT_DIR$/.idea/modules/113146232/ExtensionsTest.ExtensionsTestLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExtensionsTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExtensionsTest.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sampleextension/ExtensionsTest.sampleextension.iml" filepath="$PROJECT_DIR$/.idea/modules/sampleextension/ExtensionsTest.sampleextension.iml" />
     </modules>
